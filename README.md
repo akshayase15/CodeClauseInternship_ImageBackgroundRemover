@@ -1,6 +1,7 @@
 # CodeClauseInternship_ImageBackgroundRemover
 
 main.py -- FastAPI Backend
+
 index.html, styles.css, script.js -- Frontend
 
 1. Make necessary changes to the save location of files in main.py
