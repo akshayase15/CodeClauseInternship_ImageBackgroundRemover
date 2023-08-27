@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>RemoveBG</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Background Remover</h1>
+
+            <form id="uploadForm">
+                <label for="fileInput">Upload Images</label>
+                <input type="file" id="fileInput" multiple>
+                <br>
+                <div>
+                    <input type="button" id="ip_btn" value="Upload" onclick="uploadimage()">
+                </div>
+            </form>
+
+            <hr>
+            <form>
+                <input type="button" value="Remove Background" onclick="bgremove()">
+            </form>
+            <hr>
+            <form>
+                <input type="button" value="Show Image" onclick="showimage()">
+            </form>
+            <div>
+                <img id="bgImage" alt="Poster" hidden>
+            </div>
+            <br>
+            <form>
+                <input type="button" value="Save to Device" onclick="downloadfile()">
+            </form>
+            <br>
+            <div id="response"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
